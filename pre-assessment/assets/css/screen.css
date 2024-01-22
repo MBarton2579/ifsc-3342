@@ -64,6 +64,27 @@ body {
 	margin-top: 5px;
 	margin-bottom: 15px;
 }
+.alert {
+	background-color: plum;
+	color: aqua;
+}
+/*Content link hover color*/
+#content a{
+	color: black;
+}
+#content a:hover{
+	background-color:grey;
+}
+/*Content heading colors*/
+#content h2 {
+	color: darkmagenta;
+}
+#content h3 {
+	color: darkred;
+}
+#content h4 {
+	color: darkorange;
+}
 #footer {
 	background-color: #000;
 	color: #FFF;
@@ -75,10 +96,4 @@ body {
 	margin-right: 20px;
 	margin-left: 20px;
 }
-.hide-text {
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	background: url();
-	}
 }
