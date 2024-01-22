@@ -85,6 +85,12 @@ body {
 #content h4 {
 	color: darkorange;
 }
+/*Float image*/
+.float-image{
+    float: right;
+    border: 2px solid black;
+    margin: 6px;
+}
 #footer {
 	background-color: #000;
 	color: #FFF;
