@@ -17,24 +17,27 @@ html{
 }
 
 main{
-    width: 956px;
+   /* width: 956px;*/
     margin: 20px auto;
     border: 1px solid #000;
-    background-image: url(../img/grid.png);
+   /* background-image: url(../img/grid.png);*/
 }
 
 header.primary, footer.primary{
-    width: 916px;
+    /*916px/956px*/
+    width: 95.8159%;
     background: rgba(0, 0, 0, 0.4);
-    margin: 20px;
+    /*20px/956px*/
+    margin: 2.0921%;
     padding: 20px;
     float: left;
 }
 
 #blog{
     background: rgba(0, 0, 0, 0.4);
-    width: 604px;
-    margin-left: 20px;
+    /*604px/956px*/
+    width: 63.1799%;
+    margin-left: 2.0921%;
     padding:20px;
     float: left;
 
@@ -42,8 +45,9 @@ header.primary, footer.primary{
 
 aside{
     background: rgba(0, 0, 0, 0.4);
-    width: 292px;
-    margin-left: 20px;
+    /*292px/956px*/
+    width: 30.5439%;
+    margin-left: 2.0921%;
     padding: 20px;
     float: left;
 }
