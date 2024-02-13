@@ -15,19 +15,49 @@ html{
 .cf:after {
     clear: both;
 }
-
+/*
 main{
-   /* width: 956px;*/
+    width: 956px;
     margin: 20px auto;
     border: 1px solid #000;
-   /* background-image: url(../img/grid.png);*/
+    background-image: url(../img/grid.png);
+}
+*/
+
+main{
+    width: 956px;
+    display: grid;
+    grid-template-columns: (repeat(12,1fr));
+    grid-template-rows: 100px, auto, 100px;
+    margin: auto;
+
 }
 
-header.primary, footer.primary{
-    /*916px/956px*/
+header.primary{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#content{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+footer.primary{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#blog{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+aside{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/*header.primary, footer.primary{
+    916px/956px
     width: 95.8159%;
     background: rgba(0, 0, 0, 0.4);
-    /*20px/956px*/
+    20px/956px
     margin: 2.0921%;
     padding: 20px;
     float: left;
@@ -35,7 +65,7 @@ header.primary, footer.primary{
 
 #blog{
     background: rgba(0, 0, 0, 0.4);
-    /*604px/956px*/
+    604px/956px
     width: 63.1799%;
     margin-left: 2.0921%;
     padding:20px;
@@ -45,9 +75,9 @@ header.primary, footer.primary{
 
 aside{
     background: rgba(0, 0, 0, 0.4);
-    /*292px/956px*/
+    292px/956px
     width: 30.5439%;
     margin-left: 2.0921%;
     padding: 20px;
     float: left;
-}
+}*/
