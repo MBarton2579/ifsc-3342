@@ -1,0 +1,114 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* Typography */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Fluid Images */
+  img {
+    max-width: 100%;
+  }
+
+  /* Utility Classes */
+  .container {
+    width: 420px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  /* Helper Classes */
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+  }
+
+  /* Global Styles */
+  body {
+    line-height: 1.5;
+  }
+  a:link, a:visited {
+    color: black;
+  }
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px 20px 0px 20px;
+  }
+  nav li {
+    list-style-type: none;
+  }
+  nav a:link, nav a:visited {
+    display: block;
+    padding: 8px 16px;
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    background: rgba(255, 255, 255);
+  }
+  nav a:hover {
+    background: rgb(215, 215, 215, 0.2); 
+  }
+  main {
+    padding: 1px 20px;
+  }
+  dl{
+    display: grid;
+    grid-template: repeat(7, 50px) / 8em 1fr;
+    font-size: .89rem;
+  }
+  dt{
+    font-weight: 800;
+    grid-column: 1;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+  }
+  dd{
+    margin: 0;
+    grid-column: 2;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+  }
+  .related-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  .related-links a{
+    border: 1px solid black;
+    padding: 8px 16px;
+    margin: 16px;
+    text-align: center;
+    text-decoration: none;
+    background: rgba(255, 255, 255);
+  }
+  .related-links a:hover{
+    background: rgb(215, 215, 215, 0.2);
+  }
+  #skills {
+    border-bottom: 1px solid black;
+  }
+  #experience {
+    border-bottom: 1px solid black;
+  }
+  #education {
+    border-bottom: 1px solid black;
+    margin-bottom: 16px;
+  }
+  footer {
+    margin: 8px;
+    text-align: center;
+  }
