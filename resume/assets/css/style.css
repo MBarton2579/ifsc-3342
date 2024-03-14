@@ -17,7 +17,6 @@ html {
 
   /* Utility Classes */
   .container {
-    width: 768px;
     margin: 0 auto;
     background: rgb(137, 192, 224);
   }
@@ -38,6 +37,9 @@ html {
   /* Global Styles */
   body {
     line-height: 1.5;
+  }
+  #top {
+    height: 82px;
   }
   a:link, a:visited {
     color: black;
@@ -63,6 +65,9 @@ html {
   }
   main {
     padding: 1px 20px;
+  }
+  #about img {
+    border: 1px solid black;
   }
   dl{
     display: grid;
@@ -116,7 +121,7 @@ html {
 
   /* Media Queries*/
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 991px){
     #about {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -125,7 +130,7 @@ html {
     }
     .bio {
       grid-column: 1 / 2;
-      font-size: .85rem
+      font-size: .85rem; 
     }
     .details {
       grid-column: 2 / 3;
@@ -135,5 +140,34 @@ html {
       grid-column: 1 / 3;
       grid-row: 2 / 3;
     }
-
   }
+
+  @media screen and (min-width: 992px) {
+    #about {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
+      border-bottom: 1px solid black;
+    }
+    .bio{
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+    .details{
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      font-size: 1rem;
+      margin: 0;
+    }
+    .related-links{
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      display: grid;
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  }
+    
+  
