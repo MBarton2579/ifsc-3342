@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Starter CSS*/
+.hero-panel {
+    height: 350px;
+}
+
+.hero-panel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+footer.primary {
+    background-color: rgba(33, 37, 41);
+    color: #dee2e6;
+}
