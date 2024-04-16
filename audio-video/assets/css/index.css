@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+section#main {
+    display: flex;
+    flex-direction: column;
+}
+
+section#main section {
+    margin: 25px;
+}
