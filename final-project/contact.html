@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Final Project">
+    <meta name="author" content="Malachi Barton">
+    <link rel="stylesheet" href="assets/styles/contact.css"></style>
+    <title>Final Project</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "ky8ey6OiFjEXOvKQG",
+        });
+        })();
+    </script>
+</head>
+
+<body>
+
+    <div class="circle"></div>
+
+    <header class="nav">
+
+        <ion-icon name="earth-outline" id="icon"></ion-icon>
+
+        <div class="dropdown" id="menu-icon">
+            <button class="dropbtn" id="menubtn"><ion-icon name="menu-outline"></ion-icon></button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="dwarf.html">Dwarf Planets</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="dropdown" id="planet-dropdown">
+            <button class="dropbtn" id="planetbtn">More &#9660;</ion-icon></button>
+            <div class="dropdown-content">
+                <a href="planet-jokes.html">Planet Jokes</a>
+                <a href="dwarf.html">Dwarf Planets</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-panel">
+        <header class="primary">
+            <h1>Contact</h1>
+        </header>
+    </div>
+
+    <section class="container">
+
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Contact Us</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea id="message" rows="4" placeholder="Type Here" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+    </section>
+
+    <footer>&copy; 2024 | Malachi Barton | The Planet Site</footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="assets/js/contact.js"></script>
+</body>
+</html>

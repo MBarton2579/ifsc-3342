@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: white;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Starter CSS*/
+
+
+.hero-panel {
+    height: 70vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-panel header h1{
+    font-size: 50px;
+}
+
+body {
+    /*background-color: #151b1c;*/
+    font-family: "Roboto", sans-serif;
+}
+
+header.nav {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#icon {
+    font-size: 50px;
+    margin: 10px;
+    width: 200px;
+}
+
+#menu-icon {
+    display: none;
+}
+
+#menubtn {
+    font-size: 40px;
+}
+
+nav {
+    float: left;
+    align-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    align-content: center;
+    min-width: 200px;
+}
+
+.dropdown button {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dropdown button:hover {
+    background-color: #151b1c;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #151b1c;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header.primary {
+    background-image: url(../images/javier-miranda-Jn2EaLLYZfY-unsplash.jpg);
+    color: #dee2e6;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.intro {
+    background-color: rgba(33, 37, 41);
+    color: #dee2e6;
+}
+
+.info {
+    padding: 25px 250px 25px 250px;
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+.info h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+#credit {
+    margin-top: 10px;
+    color: gray;
+}
+
+.info a {
+    color: gray;
+    text-decoration: none;
+}
+
+.info a:visited {
+    color: gray;
+}
+
+.planets-container {
+    padding: 25px 250px 25px 250px;
+    
+}
+
+.planets-container h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.planet {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    
+  }
+
+  .planet-img {
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .planet-content {
+
+  }
+
+  .planet-content h3 {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+
+  .planet-content h4 {
+    margin-bottom: 25px;
+    font-size: 25px;
+    color: orangered;
+  }
+
+  .planet p {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .planet label {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .planet span {
+    font-size: 20px;
+  }
+
+footer {
+    background-color: black;
+    color: #dee2e6;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1220px) {
+
+    .planet {
+        grid-template-columns: 1fr;
+      }
+
+    .planets-container {
+        padding: 25px 100px 25px 100px;
+        
+    }
+
+    .info {
+        padding: 25px 100px 25px 100px;
+    }
+  
+}
+
+@media screen and (max-width: 575px) {
+    .planets-container {
+        padding: 5px;
+        
+    }
+
+    .info {
+        padding: 5px;
+    }
+
+}
+
+@media screen and (max-width: 968px) {
+    #menu-icon {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    #menu-icon {
+        width: 40px;
+    }
+    #menubtn {
+        width: 40px;
+        font-size: 20px;
+    }
+
+    #menu-icon.dropdown {
+        width: 40px;
+    }
+
+    #planet-dropdown {
+        font-size: 15px;
+        width: 50px;
+    }
+
+    #planetbtn {
+        font-size: 15px;
+    }
+
+    header.nav {
+        justify-content: space-around;
+    }
+}
